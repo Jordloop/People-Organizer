@@ -1,10 +1,12 @@
-  <h1>
-    {{title}}
-  </h1>
 
-  <a routerLink="characters">Characters</a>
-  <a routerLink="admin">Admin</a>
 
-  <div class="Container">
-    <router-outlet></router-outlet>
-  </div>
+<h1 class="text-center">
+  {{title}}
+</h1>
+<ul class="nav nav-tabs">
+  <li><a routerLink="characters">View Characters</a></li>
+  <li><a routerLink="admin">New Character</a></li>
+</ul>
+
+
+<router-outlet></router-outlet>
