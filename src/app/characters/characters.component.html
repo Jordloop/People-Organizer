@@ -1,3 +1,6 @@
-<p>
-  characters works!
-</p>
+<p>characters page</p>
+<div *ngFor="let character of characters | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)='goToDetailPage(project)'>{{character.playerName}}</h3>
+  </div>
+</div>

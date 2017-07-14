@@ -5,7 +5,13 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class CharacterService {
+  characters: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+  this.characters = database.list('characters')
+  }
 
+  getCharacters() {
+    return this.characters;
+  }
 }
