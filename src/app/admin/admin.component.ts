@@ -10,11 +10,11 @@ import { CharacterService } from '../character.service'
 })
 export class AdminComponent{
 
+  constructor(private characterService: CharacterService) { }
+
   submitForm( playerName: string, characterName: string, characterClass: number, level: number, background: string, race: string, alignment: string ) {
   const newCharacter: Character = new Character(playerName, characterName, characterClass, level, background, race, alignment );
-  console.log(newCharacter);
+  this.characterService.addCharacter(newCharacter);
+  alert("Your Character has been saved!")
   }
 }
-
-
-  // constructor( public playerName, string, public characterName: string, public characterClass: number, public level: number, public background: string, public race: string, public alignment: string ) {}
