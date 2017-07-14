@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from './landing/landing.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AdminComponent } from './admin/admin.component';
+import { CharacterDetailComponent } from './character-detail/character-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'characters/:id',
+    component: CharacterDetailComponent
   }
 ];
 
