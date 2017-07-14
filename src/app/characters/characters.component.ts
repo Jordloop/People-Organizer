@@ -20,4 +20,7 @@ export class CharactersComponent implements OnInit {
     console.log(this.characters);
   }
 
+  goToCharacterDetailPage(clickedCharacter) {
+    this.router.navigate(['characters', clickedCharacter.$key]);
+  };
 }
