@@ -15,7 +15,6 @@ export class CharacterEditComponent{
   constructor(private characterService: CharacterService) { }
 
 beginEditCharacter(characterToEdit) {
-  console.log(characterToEdit);
   this.characterService.editCharacter(characterToEdit);
 }
 
