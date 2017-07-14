@@ -22,4 +22,17 @@ export class CharacterService {
   addCharacter(newCharacter: Character) {
     this.characters.push(newCharacter);
   }
+
+  editCharacter(localEditedCharacter) {
+    const characterEntryInFirebase = this.getCharacterById(localEditedCharacter.$key);
+    characterEntryInFirebase.update({ playerName: localEditedCharacter.playerName,
+                                      characterName: localEditedCharacter.characterName,
+                                      characterClass: localEditedCharacter.characterClass,
+                                      level: localEditedCharacter.level,
+                                      characterBackground: localEditedCharacter.background,
+                                      race: localEditedCharacter.race,
+                                      alignment: localEditedCharacter.alignment
+                                    });
+    console.log("Updated!")
+  }
 }

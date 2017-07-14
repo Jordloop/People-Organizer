@@ -16,6 +16,8 @@ import { LandingComponent } from './landing/landing.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AdminComponent } from './admin/admin.component';
 import { CharacterDetailComponent } from './character-detail/character-detail.component';
+import { CharacterEditComponent } from './character-edit/character-edit.component';
+import { CharacterAddComponent } from './character-add/character-add.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +32,9 @@ export const firebaseConfig = {
     LandingComponent,
     CharactersComponent,
     AdminComponent,
-    CharacterDetailComponent
+    CharacterDetailComponent,
+    CharacterEditComponent,
+    CharacterAddComponent
   ],
   imports: [
     BrowserModule,

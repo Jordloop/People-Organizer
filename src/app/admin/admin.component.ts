@@ -12,9 +12,4 @@ export class AdminComponent{
 
   constructor(private characterService: CharacterService) { }
 
-  submitForm( playerName: string, characterName: string, characterClass: number, level: number, background: string, race: string, alignment: string ) {
-  const newCharacter: Character = new Character(playerName, characterName, characterClass, level, background, race, alignment );
-  this.characterService.addCharacter(newCharacter);
-  alert("Your Character has been saved!")
-  }
 }
