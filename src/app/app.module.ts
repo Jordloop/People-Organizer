@@ -14,6 +14,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { CharactersComponent } from './characters/characters.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +27,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     LandingComponent,
-    CharactersComponent
+    CharactersComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
