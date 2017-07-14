@@ -17,7 +17,6 @@ export class CharactersComponent implements OnInit {
 
   ngOnInit() {
     this.characters = this.characterService.getCharacters();
-    console.log(this.characters);
   }
 
   goToCharacterDetailPage(clickedCharacter) {
