@@ -1,0 +1,27 @@
+{
+  [{
+    "playerName": "Jordan",
+    "characterName": "Pericles",
+    "class": "Fighter",
+    "level": 1,
+    "background": "Folk Hero",
+    "race": "Firbolg",
+    "alignment": "NG"
+    }, {
+    "playerName": "Katie",
+    "characterName":"Reigh",
+    "class": "Ranger",
+    "level": 1,
+    "background": "Nomad",
+    "race": "Wood Elf",
+    "alignment": "NG"
+  },{
+    "playerName": "Larry",
+    "characterName": "Alphonse",
+    "class": "Wizard",
+    "level": 1,
+    "background": "Scholar",
+    "race": "Human",
+    "alignment": "NL"
+  }]
+}
