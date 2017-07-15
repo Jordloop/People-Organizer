@@ -28,7 +28,7 @@ export class CharacterService {
     const characterEntryInFirebase = this.getCharacterById(localEditedCharacter.$key);
     characterEntryInFirebase.update({ playerName: localEditedCharacter.playerName,
                                       characterName: localEditedCharacter.characterName,
-                                      characterClass: localEditedCharacter.class,
+                                      class: localEditedCharacter.class,
                                       level: localEditedCharacter.level,
                                       characterBackground: localEditedCharacter.background,
                                       race: localEditedCharacter.race,
