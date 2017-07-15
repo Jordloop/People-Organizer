@@ -15,11 +15,13 @@ export class CharacterEditComponent{
   constructor(private characterService: CharacterService) { }
 
 beginEditCharacter(characterToEdit) {
-  this.characterService.editCharacter(characterToEdit);
+  if( confirm( "Confirm Update")) {
+    this.characterService.editCharacter(characterToEdit);
+  }
 }
 
 beginDeletingCharacter(characterToDelete){
-  if(confirm("Are you sure you want to delete this character? It cannot be undone.")){
+  if(confirm("Confirm Delete. This cannot be undone.")){
     this.characterService.deleteCharacter(characterToDelete);
   }
 }

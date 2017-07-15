@@ -2,8 +2,11 @@
 <div *ngFor="let character of characters | async" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)='goToCharacterDetailPage(character)'>{{character.playerName}}</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <app-character-edit [selectedCharacter]="character"></app-character-edit>
+    <h3 (click)="editClicked()">Edit</h3>
+    <div *ngIf="selectEdit">
+      <div *ngIf="currentRoute === '/admin'">
+        <app-character-edit [selectedCharacter]="character"></app-character-edit>
+      </div>
     </div>
   </div>
 </div>
