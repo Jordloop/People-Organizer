@@ -18,4 +18,9 @@ beginEditCharacter(characterToEdit) {
   this.characterService.editCharacter(characterToEdit);
 }
 
+beginDeletingCharacter(characterToDelete){
+  if(confirm("Are you sure you want to delete this character? It cannot be undone.")){
+    this.characterService.deleteCharacter(characterToDelete);
+  }
+}
 }

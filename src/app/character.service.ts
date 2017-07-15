@@ -36,4 +36,8 @@ export class CharacterService {
                                     });
     console.log("Updated!")
   }
+
+  deleteCharacter(localCharacterToDelete){
+    this.getCharacterById(localCharacterToDelete.$key).remove();
+  }
 }
