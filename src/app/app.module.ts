@@ -14,7 +14,6 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { CharactersComponent } from './characters/characters.component';
-import { AdminComponent } from './admin/admin.component';
 import { CharacterDetailComponent } from './character-detail/character-detail.component';
 import { CharacterEditComponent } from './character-edit/character-edit.component';
 import { CharacterAddComponent } from './character-add/character-add.component';
@@ -31,7 +30,6 @@ export const firebaseConfig = {
     AppComponent,
     LandingComponent,
     CharactersComponent,
-    AdminComponent,
     CharacterDetailComponent,
     CharacterEditComponent,
     CharacterAddComponent

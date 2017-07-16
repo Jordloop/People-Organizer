@@ -16,10 +16,6 @@ const appRoutes: Routes = [
     component: CharactersComponent
   },
   {
-    path: 'admin',
-    component: AdminComponent
-  },
-  {
     path: 'characters/:id',
     component: CharacterDetailComponent
   },
