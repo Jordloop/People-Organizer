@@ -24,7 +24,6 @@ export class CharacterService {
   }
 
   editCharacter(localEditedCharacter) {
-    console.log("editCharacter");
     const characterEntryInFirebase = this.getCharacterById(localEditedCharacter.$key);
     characterEntryInFirebase.update({ playerName: localEditedCharacter.playerName,
                                       characterName: localEditedCharacter.characterName,
@@ -34,7 +33,6 @@ export class CharacterService {
                                       race: localEditedCharacter.race,
                                       alignment: localEditedCharacter.alignment
                                     });
-    console.log("Updated!")
   }
 
   deleteCharacter(localCharacterToDelete){

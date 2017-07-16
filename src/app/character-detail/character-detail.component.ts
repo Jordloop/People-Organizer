@@ -15,6 +15,7 @@ export class CharacterDetailComponent implements OnInit {
   characterId: string;
   characterToDisplay;
   selectEdit: boolean = null;
+  characterInfo: boolean = true;
 
   constructor(private route: ActivatedRoute, private location: Location, private characterService: CharacterService) { }
 
@@ -28,9 +29,11 @@ export class CharacterDetailComponent implements OnInit {
   editClicked() {
     if(this.selectEdit === null) {
       this.selectEdit = true;
+      // this.characterInfo = null;
     }
     else {
      this.selectEdit = null;
+    //  this.characterInfo = true;
     }
   }
 

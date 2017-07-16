@@ -14,15 +14,15 @@ export class CharacterEditComponent{
 
   constructor(private characterService: CharacterService) { }
 
-beginEditCharacter(characterToEdit) {
-  if( confirm( "Confirm Update")) {
-    this.characterService.editCharacter(characterToEdit);
+  beginEditCharacter(characterToEdit) {
+    if( confirm( "Confirm Update")) {
+      this.characterService.editCharacter(characterToEdit);
+    }
   }
-}
 
-beginDeletingCharacter(characterToDelete){
-  if(confirm("Confirm Delete. This cannot be undone.")){
-    this.characterService.deleteCharacter(characterToDelete);
+  beginDeletingCharacter(characterToDelete){
+    if(confirm("Confirm Deletion. This cannot be undone.")){
+      this.characterService.deleteCharacter(characterToDelete);
+    }
   }
-}
 }

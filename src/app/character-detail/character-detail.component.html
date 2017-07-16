@@ -1,8 +1,8 @@
-<div class="well">
+<div *ngIf="characterInfo" class="well">
   <h3><small>Player:</small> {{(characterToDisplay | async)?.playerName}}</h3>
   <h3><small>Character:</small> {{(characterToDisplay | async)?.characterName}}</h3>
   <h3><small>Race:</small> {{(characterToDisplay | async)?.race}}</h3>
-  <h3><small>Class:</small> {{(characterToDisplay | async)?.class}}</h3>
+  <h3><small>Class:</small> {{(characterToDisplay | async)?.characterClass}}</h3>
   <h3><small>Level:</small> {{(characterToDisplay | async)?.level}}</h3>
   <h3><small>Background:</small> {{(characterToDisplay | async)?.background}}</h3>
   <h3><small>Alignment:</small> {{(characterToDisplay | async)?.alignment}}</h3>
