@@ -1,4 +1,4 @@
-<div class="Well">
+<div class="well">
   <h3><small>Player:</small> {{(characterToDisplay | async)?.playerName}}</h3>
   <h3><small>Character:</small> {{(characterToDisplay | async)?.characterName}}</h3>
   <h3><small>Race:</small> {{(characterToDisplay | async)?.race}}</h3>
@@ -6,4 +6,8 @@
   <h3><small>Level:</small> {{(characterToDisplay | async)?.level}}</h3>
   <h3><small>Background:</small> {{(characterToDisplay | async)?.background}}</h3>
   <h3><small>Alignment:</small> {{(characterToDisplay | async)?.alignment}}</h3>
+</div>
+<h3 (click)="editClicked()">Edit</h3>
+<div *ngIf="selectEdit">
+  <app-character-edit [selectedCharacter]="characterToDisplay | async"></app-character-edit>
 </div>

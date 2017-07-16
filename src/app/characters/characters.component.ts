@@ -13,9 +13,6 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class CharactersComponent implements OnInit {
   characters: FirebaseListObservable<any[]>;
 
-  selectEdit: boolean = null;
-  currentRoute: string = this.router.url;
-
   constructor(private router: Router, private characterService: CharacterService) { }
 
   ngOnInit() {
@@ -26,12 +23,4 @@ export class CharactersComponent implements OnInit {
     this.router.navigate(['characters', clickedCharacter.$key]);
   };
 
-  editClicked() {
-    if(this.selectEdit === null) {
-      this.selectEdit = true;
-    }
-    else {
-     this.selectEdit = null;
-    }
-  }
 }

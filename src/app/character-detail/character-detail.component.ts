@@ -14,6 +14,7 @@ import { CharacterService } from '../character.service';
 export class CharacterDetailComponent implements OnInit {
   characterId: string;
   characterToDisplay;
+  selectEdit: boolean = null;
 
   constructor(private route: ActivatedRoute, private location: Location, private characterService: CharacterService) { }
 
@@ -22,6 +23,15 @@ export class CharacterDetailComponent implements OnInit {
       this.characterId = urlParameters['id'];
     });
     this.characterToDisplay = this.characterService.getCharacterById(this.characterId);
+  }
+
+  editClicked() {
+    if(this.selectEdit === null) {
+      this.selectEdit = true;
+    }
+    else {
+     this.selectEdit = null;
+    }
   }
 
 }
