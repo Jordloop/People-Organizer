@@ -1,28 +1,53 @@
 # PeopleOrganizer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+#### **By Jordan Loop**
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A user can create, update, and delete characters for Dungeons and Dragons.
 
-## Code scaffolding
+## Setup/Installation Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+#### From your terminal
 
-## Build
+* Clone repository to desktop
+  <pre>git clone https://github.com/Jordloop/People-Organizer</pre>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* Install required packages from top level of project's directory.
+  <pre>npm install</pre>
+  <pre>bower install</pre>
 
-## Running unit tests
+#### Create src/app/api-keys.ts
+* Place your personal Geocoding API key in place of "key"
+  <pre>exports const firebaseConfig="key"</pre>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Obtain your own API key
+* Follow the steps provided by Google found here:<br>
+  https://firebase.google.com/
 
-## Running end-to-end tests
+#### Import sample-character.json
+* Import to you firebase database so you have sample data to work with.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+#### Useing the api
+* Run the following command in your terminal:
+  <pre>ng serve</pre>
+* Click the following link to access the api:<br>
+  http://localhost:4200/
+## Known Bugs
 
-## Further help
+* No known bugs
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Support and contact details
+
+If you have any issues or have questions, ideas, concerns, or contributions please contact through Github.
+
+## Technologies Used
+
+* Typescript
+* HTML
+* BootStrap
+* Angular 2
+
+
+### License
+Copyright (c) 2017 Jordan Loop, Epicodus
